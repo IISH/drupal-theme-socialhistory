@@ -1,0 +1,102 @@
+
+body {
+  margin: 1em;
+  background-color: #fff;
+  font-family: sans-serif;
+}
+th {
+  text-align: left; /* LTR */
+  color: #006;
+  border-bottom: 1px solid #ccc;
+}
+tr.odd {
+  background-color: #ddd;
+}
+tr.even {
+  background-color: #fff;
+}
+td {
+  padding: 5px;
+}
+#menu {
+  visibility: hidden;
+}
+#main {
+  margin: 1em;
+}
+a:link {color: #000;}
+a:visited {color: #000;}
+a:hover {color: #00f;}
+a:link img, a:visited img {border: 0;}
+.print-footnote {font-size: xx-small;}
+img.print-logo {border: 0;}
+.print-site_name {}
+.print-breadcrumb {font-size: x-small;}
+.print-title {}
+.print-submitted {font-size: small;}
+.print-created {font-size: small;}
+.print-taxonomy {
+  text-align: right;
+}
+.print-taxonomy li {display: inline;}
+.print-content {}
+.print-hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  color: #9E9E9E;
+  background-color: #9E9E9E;
+}
+.print-message {
+  border: medium dotted blue;
+  padding: 1em;
+}
+.print-source_url {font-size: small;}
+.print-links {font-size: small;}
+.print-footer {text-align: center;}
+
+/* edr */
+
+
+.field-name-field-posted .field-label{
+display:inline-block;
+float: left;
+}
+
+.field-name-field-posted .field-label,
+.field-name-field-posted .field-items {
+	font-size: 75%;
+}
+
+.print-site_name,
+.print-breadcrumb,
+.print-hr {
+	display: none;
+}
+
+.section-1 h1 {
+	font-size: 160%;
+}
+
+.section-2 h1 {
+	font-size: 140%;
+}
+
+.section-3 h1 {
+	font-size: 110%;
+}
+
+h1 {
+	margin: 16px 0px 4px 0px;
+}
+
+p {
+	margin: 0px 0px 12px 0px;
+}
+
+.print-source_url {
+	margin-top: 24px;
+	border-top: 1px solid #000; 
+	padding-top: 6px;
+}
+
