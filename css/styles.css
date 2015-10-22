@@ -74,6 +74,11 @@ font-size: 80%;
 h2, h2.block-title {
   font-size: 24px;
   font-weight: normal;
+  margin-bottom: 10px;
+}
+h2.block-title {
+  font-size: 24px;
+  font-weight: normal;
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid #50739B;
@@ -1609,3 +1614,11 @@ xxx#block-menu-menu-hsn-workshop li.leaf a.active {
 	border-bottom: none;
 	padding-bottom: 0px;
 }
+
+/****/
+
+blockquote {
+  font-style: italic;
+  margin: 10px;
+}
+
