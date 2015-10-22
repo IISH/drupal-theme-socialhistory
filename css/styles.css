@@ -21,7 +21,7 @@ loranje FFE2CC store vlakken
 
 body {
 /*  font: 12px Georgia,'Times New Roman',serif; */
-  font: 13px Arial,Helvetica,sans-serif;
+  font: 12px Arial,Helvetica,sans-serif;
   line-height: 15px;
   color: #666666;
 }
@@ -29,6 +29,7 @@ body {
 .breadcrumb,
 .block-iish-blocks,
 .block-menu-block,
+.block-book-navigation,
 .read-more {
   font-family: Arial,Helvetica,sans-serif;
 }
@@ -43,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   line-height: 1;
   letter-spacing: 0;
-	color: #A078A0;
+	color: #50739B;
 }
 
 p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset {
@@ -51,8 +52,7 @@ p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset {
 }
 
 h3 {
-  font: 16px Arial,Helvetica,sans-serif;
-  color: #A078A0;
+  font: 14px Arial,Helvetica,sans-serif;
 }
 
 h6 {
@@ -66,13 +66,17 @@ a:hover {
   text-decoration: underline;
 }
 
+
+small {
+font-size: 80%;
+}
+
 h2, h2.block-title {
   font-size: 24px;
   font-weight: normal;
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid #50739B;
-  color: #A078A0;
 }
 h2.block-title a:hover {
   text-decoration: none;
@@ -83,11 +87,10 @@ h2.block-title a:hover {
 }
 
 .site-slogan {
-  font-family: Georgia,'Times New Roman',serif;
+  font-family: Arial,Helvetica,sans-serif;
   line-height: 15.7px;
-  color: #A078A0;
-	margin-top: 52px; /* ? */
-	font-size: 32px;
+  color: #50739B;
+	margin-top: 27px; /* ? */
 }
 .i18n-nl .site-name-slogan {
   margin-left: 70px;
@@ -122,15 +125,15 @@ h2.block-title a:hover {
 }
 
 #region-sidebar-first.grid-2 {
-  margin-top: 17px;
+  margin-top: 46px;
 }
-#region-sidebar-first .block-menu-block {
+#region-sidebar-first .block-menu-block,
+#region-sidebar-first .block-book-navigation {
   font-size: 14px;
   line-height: 15px;
 }
 
-#region-sidebar-first .menu a.active,
-#region-sidebar-second .menu a.active {
+#region-sidebar-first .menu a.active {
   font-weight: bold;
 }
 
@@ -140,24 +143,9 @@ h2.block-title a:hover {
   min-height: 10px;
 }
 
-#region-content {
-/*  margin-top: 17px; */
-  margin-top: 0px;
-}
-
-body.front #region-content {
-margin-top: 17px;
-}
-
-
 #region-sidebar-second.grid-4 {
 /*  margin-top: 20px; */
   margin-top: 17px;
-}
-
-#region-sidebar-second .block-inner,
-#region-sidebar-first .block-inner {
-	margin-bottom: 20px;
 }
 
 #zone-footer {
@@ -263,16 +251,13 @@ margin-top: 17px;
 #block-locale-language .locale-untranslated {
   text-decoration: none;
 }
-
-/* block links lijnend gemaakt */
-
 #block-print-print-links {
-  float: left;
+  float: right;
 }
 #block-print-print-links .print_html {
   display: block;
   margin-left: 0;
-  padding: 0.3em 10px 0.3em 0px;
+  padding: 0.3em 0 0.3em 10px;
 }
 
 .node .print-link {
@@ -366,7 +351,7 @@ margin-top: 17px;
 .block-news-block .view-news .views-row,
 .block-events-block-1 .view-events .views-row,
 .page-events .views-row {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 
@@ -391,7 +376,6 @@ margin-top: 17px;
 .more-link a:link,
 .more-link a:visited {
   font-family: Arial,Helvetica,sans-serif;
-text-transform: lowercase;
 }
 
 .more-link {
@@ -453,6 +437,7 @@ text-transform: lowercase;
 .block-nodequeue-1-block {
   overflow: hidden;
   margin-bottom: 10px;
+  margin-top: 30px;
 }
 .block-nodequeue-1-block .view-content {
   position: relative;
@@ -616,7 +601,7 @@ text-transform: lowercase;
   height: 70px;
   padding: 15px 40px;
   margin: 25px 0;
-  font: 24px Georgia,'Times New Roman',serif;
+  font: 20px Georgia,'Times New Roman',serif;
   line-height: 30px;
   color: #fff;
   text-align: center;
@@ -627,7 +612,7 @@ text-transform: lowercase;
   height: 70px;
   padding: 15px 40px;
   margin: 25px 0;
-  font: 24px Georgia,'Times New Roman',serif;
+  font: 20px Georgia,'Times New Roman',serif;
   line-height: 30px;
   color: #fff;
   text-align: center;
@@ -642,6 +627,16 @@ text-transform: lowercase;
 .banner-blue span.ext,
 .banner-orange span.ext {
   display: none;
+}
+
+.block-block-12 {
+	float: left;
+    margin-right: 10px;
+}
+
+.block-block-13 {
+	float: right;
+    margin-right: 0px;
 }
 
 .menu li {
@@ -701,7 +696,7 @@ ul.tabs {
 
 
 h1 {
-    font-size: 32px;
+    font-size: 36px;
 }
 a:link, a:visited {
     color: #0062A0;
@@ -715,6 +710,8 @@ a:link, a:visited {
 .group-terms .field-name-field-countries,
 .group-terms .field-name-field-themes,
 .group-series .field-name-field-series,
+.group-series .field-name-field-subseries,
+.group-series .field-name-field-sub-series-number,
 .group-series .field-name-field-series-number-new {
   display: inline-block;
 }
@@ -723,6 +720,8 @@ a:link, a:visited {
 .field-name-field-themes .field-item,
 .field-name-field-blog-tags .field-item,
 .field-name-field-series .field-item,
+.field-name-field-subseries .field-item,
+.field-name-field-sub-series-number .field-item,
 .field-name-field-series-number-new .field-item {
   margin-right: 0.2em;
 }
@@ -842,10 +841,14 @@ div.messages ul li {
 
 /* positioning of images in page body */
 
-.field-name-body img {
+.field-name-body img,
+.field-name-field-metadata img {
   float: left;
-  margin: 0 15px 25px 0;
+  margin: 0 10px 15px 0;
 }
+
+.field-name-field-metadata p,
+field-name-field-metadata h3,
 .field-name-body p,
 .field-name-body h3 {
   clear: left;
@@ -854,6 +857,22 @@ div.messages ul li {
 #region-content .content .field {
   margin-bottom: 5px;
 }
+
+/* EdR: image positioning in sidebar second */
+
+#region-sidebar-second img {
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+#region-sidebar-second p {
+  clear: left;
+}
+
+#region-sidebar-second .view-item-of-the-day img {
+    margin: 0px 0px 0px 0px;
+}
+
 
 /* EdR: bit more space op top of the blog tags */
 
@@ -998,6 +1017,7 @@ div.messages ul li {
 #region-content .profile .group-terms legend,
 #region-content .profile .field-name-field-department .field-label,
 #region-content .profile .field-name-field-email .field-label,
+#region-content .profile .field-name-field-position .field-label,
 #region-content .profile .field-name-field-document .field-label {
   display: inline-block;
   width: 8em;
@@ -1007,10 +1027,12 @@ div.messages ul li {
 #region-content .profile .field-name-field-email .field-item {
   margin-right: 10px;
 }
-#region-content .profile .field-name-field-department .field-items {
+
+#region-content .profile .field-name-field-bio .field-items {
   float: left;
-  width: 30em;
+  xxxwidth: 30em;
 }
+
 #region-content .profile .field-name-field-department .field-item {
   display: block;
 }
@@ -1100,6 +1122,7 @@ ul.browse-list {
 .page-search h1 {
   color: #A078A0;
 }
+
 .page-search #search-form {
   color: #A078A0;
   border-top: 1px solid #A078A0;
@@ -1183,13 +1206,15 @@ ul.browse-list {
 
 /* EdR: highlights, fields next to image */
 
-.view-highlights .views-field-field-image {
+.view-highlights .views-field-field-image,
+.view-issues .views-field-field-cover {
   float: left;
   margin-right: 10px;
   margin-bottom: 10px;
 }	
 
-.view-highlights .views-row {
+.view-highlights .views-row,
+.view-issues .views-row {
   clear: both;
 }
 
@@ -1197,18 +1222,28 @@ ul.browse-list {
     margin: 0 10px 10px 0;
 }
 
+/*EdR: view issues grid */
+.view-issues .views-field-field-cover {
+	  float: none;
+}
+
+.view-issues .views-field-title {
+	font-size:11px;
+}
+
+
 /* EdR: today page, metadata next to image */
 
-body.node-type-today .field-name-field-image {
+body.node-type-today .field-name-field-image,
+.view-item-of-the-day .field-name-field-image {
 	float: left;
   	margin-right: 10px;
   	margin-bottom: 10px;
 }
 
-body.node-type-today .field-name-body p {
+xxxbody.node-type-today .field-name-body p {
   	display: inline;
 }
-
 
 /* EdR: section page, wrap around image */
 
@@ -1223,20 +1258,30 @@ body.node-type-section .field-name-body p {
 }
 
 body.node-type-publication .field-name-field-image,
-body.node-type-publication .group-publication-metadata {
+body.node-type-publication .group-publication-metadata,
+body.node-type-issue .field-name-field-cover,
+body.node-type-issue .group-issue-data {
   float: left;
 }
-body.node-type-publication .group-publication-metadata {
+
+body.node-type-publication .group-publication-metadata,
+body.node-type-issue .group-issue-data {
   width: 310px;
 }
-body.node-type-publication .field-name-field-image {
+
+body.node-type-publication .field-name-field-image,
+body.node-type-issue .field-name-field-cover {
   margin-right: 10px;
 }
-body.node-type-publication .field-name-field-document {
+
+body.node-type-publication .field-name-field-document,
+body.node-type-issue .field-name-field-document {
   clear: left;
 }
 
-body.node-type-publication .field-name-field-title-complete {
+body.node-type-publication .field-name-field-title-complete,
+body.node-type-issue .field-name-field-journal,
+body.node-type-issue .field-name-field-special-issue .field-items {
 	font-style:italic;
 }
 
@@ -1389,12 +1434,14 @@ custom-search-block 2 = search block home pages dutch */
 }
 
 /* custom-search-block 3 = search block all pages english and others, 
-custom-search-block 4 = search block all pages dutch */
+custom-search-block 4 = search block all pages dutch, 
+custom-search-block 5 = search block neha journals */
 
 
 
 .block-custom-search-blocks-3 .content,
-.block-custom-search-blocks-4 .content  {
+.block-custom-search-blocks-4 .content,
+.block-custom-search-blocks-5 .content  {
 	height: 80px;
 	background-color: #ECE4EC;
 	border-color: #A078A0;
@@ -1403,7 +1450,8 @@ custom-search-block 4 = search block all pages dutch */
 }
 
 .block-custom-search-blocks-3 .block-title,
-.block-custom-search-blocks-4 .block-title {
+.block-custom-search-blocks-4 .block-title,
+.block-custom-search-blocks-5 .block-title  {
 	font-size: 24px;
 	text-transform: lowercase;
 	padding-bottom: 5px;
@@ -1414,12 +1462,14 @@ custom-search-block 4 = search block all pages dutch */
 }
 
 .block-custom-search-blocks-3 form,
-.block-custom-search-blocks-4 form {
+.block-custom-search-blocks-4 form,
+.block-custom-search-blocks-5 form {
 	margin-left: 5px;
 }
 
 .block-custom-search-blocks-3 input,
-.block-custom-search-blocks-4 input {
+.block-custom-search-blocks-4 input,
+.block-custom-search-blocks-5 input {
 	border: 0 none;
     border-radius: 0 0 0 0;
     float: left;
@@ -1429,30 +1479,43 @@ custom-search-block 4 = search block all pages dutch */
 }	
 
 .block-custom-search-blocks-3 input[type="text"],
-.block-custom-search-blocks-4 input[type="text"] {
+.block-custom-search-blocks-4 input[type="text"],
+.block-custom-search-blocks-5 input[type="text"] {
 	width: 200px;
 	padding: 0 10px;
 	background: #fff url(../images/hooks-small.png) no-repeat 0 0;
 }
 
 .block-custom-search-blocks-3 input[type="radio"],
-.block-custom-search-blocks-4 input[type="radio"] {
+.block-custom-search-blocks-4 input[type="radio"],
+.block-custom-search-blocks-5 input[type="radio"] {
    	height: 10px;
     margin: 0px 0 0 10px;
 }
 
 .block-custom-search-blocks-3 label,
-.block-custom-search-blocks-4 label {
+.block-custom-search-blocks-4 label,
+.block-custom-search-blocks-5 label {
     color: #A078A0;
 	font: 12px Arial,Helvetica,sans-serif;
 	margin-left: 5px;
 }
 
 .block-custom-search-blocks-3 .form-radios .form-item,
-.block-custom-search-blocks-4 .form-radios .form-item {
+.block-custom-search-blocks-4 .form-radios .form-item,
+.block-custom-search-blocks-5 .form-radios .form-item {
     float: left;
     margin-bottom: 0.4em;
 	margin-top: 0.9em;
+}
+
+#views-exposed-form-search-neha-journals-page {
+	display: none;
+}
+
+.view-search-neha-journals .view-filters {
+	border-bottom: none;
+	padding: 0px;
 }
 
 /* Tagadelic stylesheet **/
@@ -1506,135 +1569,43 @@ custom-search-block 4 = search block all pages dutch */
     color: #0062A0;
 }
 
-.field-label {
-	font-weight:bold;
-}
-
 /* tijdelijke oplossing voor onderscheiden auteurs bij publicatie */
 .field-name-field-author .field-item:after
 {
 content:";  ";
 }
 
-#edit-keys {
-	width: 330px;
+/* hsn-workshop menu eigen oplossing zolang nog geen hsn site */
+
+#region-sidebar-first .block-menu-menu-hsn-workshop {
+  font-family: Arial,Helvetica,sans-serif;
+  margin-top: -29px;
+  font-size: 14px;
+  line-height: 15px;  
 }
 
-#block-node-recent td.delete {
-width: 50px;
+table.population,
+table.population td
+{
+border: 1px solid #666666;
+padding: 2px;
 }
 
-#block-node-recent table {
-	width: 100%;
+xxx#block-menu-menu-hsn-workshop li.active-trail li.active-trail a.active,
+xxx#block-menu-menu-hsn-workshop li.active-trail li.active-trail a.active-trail {
+    font-weight: bold;
 }
 
-.submitted {
-	margin-bottom: 20px;
-}
-	
-.field-name-field-upload-images .field-items .field-item {
-    float: left;
-    margin: 0 10px 10px 0;
+xxx#block-menu-menu-hsn-workshop li.leaf a.active {
+    font-weight: normal;
 }
 
-.field-type-taxonomy-term-reference {
-	clear: both;
-}
+/* kopjes van blocks in content iets kleiner */
 
-
-input#edit-search-block-form--2 {
-	width: 210px;
-	margin-right: 10px;
-}
-
-input#edit-keys {
-	width: 510px;
-	margin-right: 10px;
-}
-
-/* rss feed*/
-
-h3.feed-item-title {
-	margin-bottom: 0px;
-}
-
-.feed-item-meta,
-.feed-updated,
-.feed-item-body {
-	margin-bottom: 10px;
-}
-
-/* foto albums */
-
-.view-galleries .views-field-title {
-	  margin: 10px 0px 0px 0px;
-	  width: 120px;
-}
-
-.view-galleries .views-field-field-period {
-	  margin: 0px 0px 10px 0px;
-	  width: 120px;
-}
-
-/* booknavigatie links onder pagina weg */
-
-.book-navigation {
-display: none;
-}
-
-
-#zone-content h2.block-title {
-font: 16px Arial,Helvetica,sans-serif;
-border-bottom: none;
-padding-bottom: 0px;
-}
-
-/* sitemap */
-
-.view-sitemap .views-row {
-  float: left;
-  width: 50%;
-  margin-bottom: 0px;
-}
-
-.view-sitemap h3 {
-  clear: both;
-  margin-bottom: 5px;
-  padding-top: 10px;
-}
-
-/* tabel in tekst */
-
-.content table {
-	width: 100%;
-}
-
-.content tr,
-.content td {
-	border: 1px solid #666666;
-	padding: 2px;
-}
-
-.content .view-galleries tr,
-.content .view-galleries td {
-	border: none;
-	padding: 2px;
-}
-
-.yammer-feed {
-	height: 500px;
-}
-
-#block-views-last-updates-block .views-field {
-	margin-bottom: 0px;
-}
-
-section.block-views,
-section.block-aggregator {
-	margin-bottom: 10px;
-}
-
-.view-last-updates .views-field,
-.view-forum-comments .views-field {
-font-size: 12px;
+#block-views-jobs-block h2.block-title,
+#block-views-jobs-block-2 h2.block-title,
+#block-views-jobs-block-3 h2.block-title {
+  font: 16px Arial,Helvetica,sans-serif;
+	border-bottom: none;
+	padding-bottom: 0px;
 }
