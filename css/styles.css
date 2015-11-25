@@ -107,19 +107,23 @@ h2.block-title a:hover {
 #zone-menu {
   /* width 940px, for menu bgcolor; 
      margins removed from first and last regions */
-  width: 940px;
+  max-width: 940px;
   background-color: #EDF1F5;
 	margin-bottom: 10px;
   font: 16px Georgia,'Times New Roman',serif;
 	text-transform: lowercase;	
 }
 #region-menu-first {
-  width: 620px;
+  max-width: 620px;
   margin-left: 0;
 }
 #region-menu-second {
-  width: 290px;
+  width: 180px;
   margin-right: 10px;
+  float: right;
+}
+.logged-in #region-menu-second {
+  width: 270px;
 }
 #zone-menu a:link,
 #zone-menu a:visited {
@@ -142,6 +146,9 @@ h2.block-title a:hover {
   font-weight: bold;
 }
 
+.front #region-content {
+  width: 460px;
+}
 #region-content,
 #region-sidebar-first,
 #region-sidebar-second {
@@ -156,8 +163,8 @@ h2.block-title a:hover {
 #zone-footer {
   /* width 940px inc. padding, for footer bgcolor; 
      margins removed from first and last regions */
-  width: 920px;
-  height: 100px;
+  max-width: 920px;
+  min-height: 100px;
   padding: 20px 10px;
   margin-top: 10px;
   color: #fff;
@@ -165,12 +172,18 @@ h2.block-title a:hover {
   font: 11px Georgia,'Times New Roman',serif;
 }
 #region-footer-first {
-  width: 450px;
+  max-width: 450px;
   margin-left: 0;
 }
-#region-footer-fourth {
+#region-footer-second {
   width: 130px;
+}
+#region-footer-third {
+  width: 140px;
+}
+#region-footer-fourth {
   margin-right: 0;
+  width: 130px;
 }
 
 #zone-footer a {
@@ -289,7 +302,7 @@ h2.block-title a:hover {
 .block-iish-blocks .content {
   border-bottom: 1px solid #000;
 	padding: 5px;
-	height: 60px;
+	min-height: 60px;
 }
 .block-iish-blocks-search-small .content,
 .block-iish-blocks-browse-small .content {
@@ -331,20 +344,35 @@ h2.block-title a:hover {
 .block-iish-blocks-browse-small .block-title {
   font-weight: normal;
 }
+#block-custom-search-blocks-1,
+.block-iish-blocks-browse {
+  max-width: 460px;
+}
+#block-custom-search-blocks-3,
+.block-iish-blocks-browse-small {
+  max-width: 460px;
+}
+#block-custom-search-blocks-3 .form-type-radios.form-item-custom-search-paths {
+  width: 300px;
+}
 
 .branding-data .logo-img {
   margin-left: 0;
 }
 #logo {
-	margin-left: -11px;
+  margin-left: -11px;
+  width: 100%;
 }
 
 #block-views-blog-posts-block-1 h2.block-title,
 #block-views-blog-posts-block-2 h2.block-title,
 #block-views-blog-posts-block-3 h2.block-title {
-	margin-top: -29px;
+  margin-top: -29px;
 }
 
+#block-views-news-block {
+  clear: both;
+}
 #block-views-news-block h2.block-title,
 #block-views-events-block-1 h2.block-title {
   line-height: 0.8em; /* ??? */
@@ -446,6 +474,7 @@ h2.block-title a:hover {
 }
 .block-nodequeue-1-block .view-content {
   position: relative;
+  width: 460px;
 }
 
 .node-slideshow,
@@ -640,8 +669,8 @@ h2.block-title a:hover {
 }
 
 .block-block-13 {
-	float: right;
-    margin-right: 0px;
+	float: left;
+    margin-left: 10px;
 }
 
 .menu li {
@@ -1070,7 +1099,9 @@ ul.browse-list {
 .browse-list .browse-col li {
   font-size: 13px;
 }
-
+.browse-menu {
+  margin-bottom: 5px;
+}
 .browse-menu li.browse-leaf { 
   background: url("../images/browse-bg.png") no-repeat scroll left center #FFFFFF;
   font: 14px Arial,Helvetica,sans-serif;
@@ -1323,6 +1354,9 @@ body.node-type-issue .field-name-field-special-issue .field-items {
 /*  margin: 4px 0 10px 0; */
 }
 
+.not-front #block-system-main {
+  max-width: 460px;
+}
 
 /********* extra search catalogue ***********/
 
@@ -1364,7 +1398,7 @@ custom-search-block 2 = search block home pages dutch */
 .block-custom-search-blocks-1 .content,
 .block-custom-search-blocks-2 .content {
     border-bottom: 1px solid #000000;
-    height: 60px;
+    min-height: 60px;
     padding: 5px;
     background-color: #ECE4EC;
     border-color: #A078A0;
@@ -1622,3 +1656,11 @@ blockquote {
   margin: 10px;
 }
 
+.node-type-pamflet .field-type-taxonomy-term-reference .field-item {
+  margin-right: 0.5em;
+}
+
+.node .field-type-media img {
+  width: 100%;
+  height: 100%;
+}

@@ -186,4 +186,51 @@ ul.nice-menu li {
 }
 
 
+/*********** responsive menu ************/
+
+#page .responsive-menus.responsified {
+  width: 155px;
+  float: left;
+}
+
+#page .responsive-menus.responsified span.toggler {
+  padding: 5px 5px 5px 10px;
+  background: transparent;
+  color: #000;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: inherit;
+  text-align: left;
+}
+#page .responsive-menus.responsified span.toggler img {
+  vertical-align: middle;
+}
+
+#page .responsive-menus.responsified .responsive-menus-simple {
+  background: #edf1f5;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+#page .responsive-menus.responsified .responsive-menus-simple li {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#page .responsive-menus.responsified .responsive-menus-simple li a {
+  color: #000;
+  display: block;
+  padding: 1em 10px;
+  margin: 0;
+  text-align: left;
+  border-bottom: 1px solid #bbb;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.responsive-menus.responsified .responsive-menus-simple li ul li {
+  display: none;
+}
 
